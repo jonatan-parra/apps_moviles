@@ -22,38 +22,8 @@ body {
   text-align: center;
 }
 
-#foto{
-  width: 98%;
-  height: 400px;
+#map{
+  margin: 20px 0;
   border: 1px solid;
-  margin: 1%;
-  box-sizing: border-box;
-}
-
-.button-container{
-  margin: 1rem;
-  text-align: center;
-}
-
-.button{
-  border: 1px solid;
-  color: #FFF;
-  padding: 10px;
-}
-
-#button-action{
-  font-size: large;
-  border-radius: 10px;
-  background-color: #FD4140;
-}
-
-.button-filter{
-  font-size: medium;
-  width: 6rem;
-  background-color: #7ABAF2;
-}
-
-#button-gallery{
-  font-size: large;
-  background-color: #92BA3F;
+  height: 500px;
 }
