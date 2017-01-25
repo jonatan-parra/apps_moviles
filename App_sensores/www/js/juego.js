@@ -1,9 +1,32 @@
 var app = {
 	inicio: function () {
-		
-		function onError() {
-			console.log('onError!');
+		DIAMETRO_BOLA = 50;
+		alto  = document.documentElement.clientHeight;
+		ancho = document.documentElement.clientWidth;
+
+		app.vigilaSensores();
+		app.iniciaJuego();
+	},	
+	
+	iniciaJuego: function () {
+
+		function preload() {
+			game.stage.backgroundColor = '#f27d0c';
+			game.load.image('bola', 'assets/bola.png');
 		}
+
+		function create() {
+			game.add.sprite(app.inicioX(), app.inicioY(), 'bola');
+		}
+
+		var estados = { preload: preload, create: create};
+		var game = new Phaser.Game(ancho, alto, Phaser.CANVAS, 'phaser', estados);
+		
+	},
+
+	inicioX: function(){
+		return app.numeroAleatorioHasta(ancho - DIAMETRO_BOLA);
+	}
 
 	navigator.accelerometer.watchAcceleration(this.onSuccess, onError, {frequency: 1000});
 	},
