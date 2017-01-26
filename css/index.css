@@ -1,0 +1,35 @@
+body{
+    background-color: lightyellow;
+    font-size: 12pt;
+    padding: 10px;
+}
+
+p{
+	text-align: justify;
+}
+
+a{
+	text-decoration:none; 
+	color: black;
+	background-color: #4dd0e1;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	border-radius: 10px;
+
+}
+
+footer {
+  padding:5px;
+  font-style:italic;
+  font-size:small;
+  text-align: center;
+}
+	
+.header {
+  padding: 0 10px;
+  color: #006064;
+  text-align: center;
+  height: 48.4px;
+  line-height: 48.4px;
+}
